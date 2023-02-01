@@ -36,7 +36,7 @@ body {
 }
 
 .header {
-	padding: 80px;
+	padding: 10px;
 	text-align: center;
 	background: var(--Mauve);
 	color: var(--Base);
