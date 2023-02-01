@@ -1,42 +1,70 @@
+:root {
+	/* Colors taken from https://github.com/catppuccin/catppuccin */
+	--Rosewater: #f5e0dc;
+	--Flamingo:	 #f2cdcd;
+	--Pink:	     #f5c2e7;
+	--Mauve:	   #cba6f7;
+	--Red:	     #f38ba8;
+	--Maroon:	   #eba0ac;
+	--Peach:	   #fab387;
+	--Yellow:	   #f9e2af;
+	--Green:	   #a6e3a1;
+	--Teal:	     #94e2d5;
+	--Sky:	     #89dceb;
+	--Sapphire:	 #74c7ec;
+	--Blue:	     #89b4fa;
+	--Lavender:	 #b4befe;
+	--Text:	     #cdd6f4;
+	--Subtext1:	 #bac2de;
+	--Subtext0:	 #a6adc8;
+	--Overlay2:	 #9399b2;
+	--Overlay1:	 #7f849c;
+	--Overlay0:	 #6c7086;
+	--Surface2:	 #585b70;
+	--Surface1:	 #45475a;
+	--Surface0:	 #313244;
+	--Base:	     #1e1e2e;
+	--Mantle:	   #181825;
+	--Crust:	   #11111b;
+}
+
 body {
-font-family: Arial, Helvetica, sans-serif;
-margin: 0;
+	background-color: var(--Crust);
+	color: var(--Text);
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
 }
 
 .header {
-padding: 80px;
-text-align: center;
-background: #A9ACF6;
-color: #13131D;
+	padding: 80px;
+	text-align: center;
+	background: var(--Mauve);
+	color: var(--Base);
 }
 
 .header h1 {
-				font-size: 40px;
+	font-size: 40px;
 }
 
-/* Style the top navigation bar */
 .navbar {
-overflow: hidden; /* Hide overflow */
-background-color: #333; /* Dark background color */
+	overflow: hidden;
+	background-color: var(--Overlay0);
 }
 
-/* Style the navigation bar links */
-.navbar a {
-float: left; /* Make sure that the links stay side-by-side */
-display: block; /* Change the display to block, for responsive reasons (see below) */
-color: white; /* White text color */
-text-align: center; /* Center the text */
-padding: 14px 20px; /* Add some padding */
-text-decoration: none; /* Remove underline */
-}
-
-/* Right-aligned link */
-.navbar a.right {
-float: right; /* Float a link to the right */
-}
-
-/* Change color on hover/mouse-over */
 .navbar a:hover {
-background-color: #ddd; /* Grey background color */
-color: black; /* Black text color */
+	background-color: var(--Overlay1);
+	color: var(--Text);
+}
+
+.navbar a {
+	float: left;
+	display: block;
+	color: var(--Text);
+	text-align: center;
+	padding: 14px 20px;
+	text-decoration: none;
+}
+
+.navbar a.right {
+	float: right;
 }
