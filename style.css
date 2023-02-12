@@ -1,70 +1,45 @@
-:root {
-	/* Colors taken from https://github.com/catppuccin/catppuccin */
-  --Rosewater: #dc8a78;
-  --Flamingo:  #dd7878;
-  --Pink:      #ea76cb;
-  --Mauve:     #8839ef;
-  --Red:       #d20f39;
-  --Maroon:    #e64553;
-  --Peach:     #fe640b;
-  --Yellow:    #df8e1d;
-  --Green:     #40a02b;
-  --Teal:      #179299;
-  --Sky:       #04a5e5;
-  --Sapphire:  #209fb5;
-  --Blue:      #1e66f5;
-  --Lavender:  #7287fd;
-  --Text:      #4c4f69;
-  --Subtext1:  #5c5f77;
-  --Subtext0:  #6c6f85;
-  --Overlay2:  #7c7f93;
-  --Overlay1:  #8c8fa1;
-  --Overlay0:  #9ca0b0;
-  --Surface2:  #acb0be;
-  --Surface1:  #bcc0cc;
-  --Surface0:  #ccd0da;
-  --Base:      #eff1f5;
-  --Mantle:    #e6e9ef;
-  --Crust:     #dce0e8;
-}
+@import "catpuccin.css";
 
 html *
 {
 	font-family: a-otf-ud-shin-go-pr6n, sans-serif !important;
 }
 
-
 body {
-	background-color: var(--Crust);
-	color: var(--Text);
+	background-color: var(--ctp-latte-crust);
+	color: var(--ctp-latte-text);
 	margin: 10px;
+	font-weight: 300;
+	font-style: normal;
 }
 
 .header {
 	padding: 10px;
 	text-align: center;
-	background: var(--Mauve);
-	color: var(--Base);
+	background: var(--ctp-latte-mauve);
+	color: var(--ctp-latte-base);
+	font-style: normal;
 }
 
 .header h1 {
 	font-size: 40px;
+	font-style: normal;
 }
 
 .navbar {
 	overflow: hidden;
-	background-color: var(--Overlay0);
+	background-color: var(--ctp-latte-overlay0);
 }
 
 .navbar a:hover {
-	background-color: var(--Overlay1);
-	color: var(--Text);
+	background-color: var(--ctp-latte-overlay1);
+	color: var(--ctp-latte-text);
 }
 
 .navbar a {
 	float: left;
 	display: block;
-	color: var(--Text);
+	color: var(--ctp-latte-text);
 	text-align: center;
 	padding: 14px 20px;
 	text-decoration: none;
