@@ -28,10 +28,14 @@
   --Crust:     #dce0e8;
 }
 
+html *
+{
+	font-family: fot-rodin-pron, sans-serif !important;
+}
+
 body {
 	background-color: var(--Crust);
 	color: var(--Text);
-	font-family: Arial, Helvetica, sans-serif;
 	margin: 10px;
 }
 
